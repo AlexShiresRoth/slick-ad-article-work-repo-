@@ -1,8 +1,28 @@
 <script>
     // your script goes here
+    const steps = [
+        {
+            stepNum: "Step 1",
+            direction: ` Draw a line above your eyelid (make dots and
+                        connect them if drawing a line is tough)`,
+            img: "https://ik.imagekit.io/usam13ogl7u/step1_pWqn6nYdPK.png",
+        },
+        {
+            stepNum: "Step 2",
+            direction: `Let it dry then apply a second line`,
+            img: "https://ik.imagekit.io/usam13ogl7u/step2_raCdPEFbr.png",
+        },
+        {
+            stepNum: "Step 3",
+            direction: `Once 90% dry apply the lash… Wait`,
+            img: "https://ik.imagekit.io/usam13ogl7u/step3_q8HSoGvJw.png",
+        },
+    ];
 </script>
 
 <style type="text/scss">
+    $background-color-faded: #932f6d69;
+    $background-color: #932f6d;
     .article-container {
         width: 100%;
         display: flex;
@@ -29,8 +49,43 @@
                     object-fit: contain;
                 }
             }
+            & .steps-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1rem;
+                width: 100%;
+                & .column {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding: 1rem 0;
+                    box-shadow: 0 1px 5px rgba(100, 100, 100, 0.281);
+                    &__heading {
+                        width: 100%;
+                        padding: 0.5rem 0;
+                        border-bottom: 1px solid #eee;
+                        & h4 {
+                            color: $background-color;
+                            margin: 0;
+                            margin-left: 1rem;
+                        }
+                    }
+                    & p {
+                        margin: 0.5rem 1rem;
+                        color: #333;
+                        max-width: 70%;
+                    }
+                    & img {
+                        object-fit: cover;
+                        width: 100%;
+                    }
+                }
+            }
         }
-        .column-right {
+        & .full-width {
+            width: 100%;
+        }
+        & .column-right {
             width: 30%;
         }
     }
@@ -70,12 +125,19 @@
                 I was an easy sell, magnetic lashes that can be worn 20-30 times
                 and put on at home for under $20?
             </p>
-            <p><a href="https://freelashkit.com">Sign me up!</a></p>
+            <p>
+                <a href="https://freelashkit.com"><strong>Sign me up!</strong></a>
+            </p>
             <p>So I did and a few days later they came.</p>
             <div class="img-box">
                 <img
                     src="https://ik.imagekit.io/usam13ogl7u/V1nISPlet_mid_sG4nhwBpZ.jpg" />
             </div>
+            <p>
+                Oh how glorious. Then it settled in,
+                <strong>what did I get myself in to … they said it was easy but
+                    would it be?</strong>
+            </p>
         </div>
         <div class="column-right">
             <div
@@ -96,6 +158,24 @@
                         href="https://www.facebook.com/Slick.Love.Lashes/posts/230103438522532">Monday,
                         December 21, 2020</a>
                 </blockquote>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="article-container">
+    <div class="article-content">
+        <div class="column-left full-width">
+            <p><strong>So I followed the directions</strong></p>
+            <div class="steps-grid">
+                {#each steps as { stepNum, direction, img }, i}
+                    <div class="column">
+                        <div class="column__heading">
+                            <h4>{stepNum}</h4>
+                        </div>
+                        <p>{direction}</p>
+                        <img src={img} alt="step one" />
+                    </div>
+                {/each}
             </div>
         </div>
     </div>
