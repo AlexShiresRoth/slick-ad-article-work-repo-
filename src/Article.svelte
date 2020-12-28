@@ -88,7 +88,7 @@
         }
         & .column-right {
             width: 30%;
-            & .ad-image {
+            & .a13d-image {
                 margin-top: 2rem;
                 display: flex;
                 justify-content: center;
@@ -218,7 +218,7 @@
                         December 21, 2020</a>
                 </blockquote>
             </div>
-            <div class="ad-image hide_on_mobile">
+            <div class="a13d-image hide_on_mobile">
                 <a href="https://www.freelashkit.com"><img
                         src="https://ik.imagekit.io/usam13ogl7u/300X600-slick-banner-ad-variant_My50_AQ-u.png" /></a>
             </div>
@@ -307,12 +307,12 @@
             </p>
         </div>
         <div class="column-right">
-            <div class="ad-image">
+            <div class="a13d-image">
                 <a href="https://www.freelashkit.com"><img
                         src="https://ik.imagekit.io/usam13ogl7u/slick-ad-twitter-grmlah-lash-800x800_0lwpcwH9K.png" /></a>
             </div>
 
-            <div class="ad-image hide_on_mobile">
+            <div class="a#13d-image hide_on_mobile">
                 <a href="https://www.freelashkit.com">
                     <img
                         src="https://ik.imagekit.io/usam13ogl7u/300X600-slick-banner-ad_-Nm_u2y64.png" />
