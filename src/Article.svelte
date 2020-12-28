@@ -45,7 +45,7 @@
             & .img-box {
                 max-width: 100%;
                 & img {
-                    width: 100%;
+                    max-width: 100%;
                     object-fit: contain;
                 }
             }
@@ -71,9 +71,10 @@
                         }
                     }
                     & p {
-                        margin: 0.5rem 1rem;
-                        color: #333;
+                        margin: 1rem 1rem;
+                        color: #666;
                         max-width: 70%;
+                        font-weight: 700;
                     }
                     & img {
                         object-fit: cover;
@@ -87,6 +88,64 @@
         }
         & .column-right {
             width: 30%;
+            & .ad-image {
+                margin-top: 2rem;
+                display: flex;
+                justify-content: center;
+                padding: 1rem;
+                width: 100%;
+                background: #fbfbfb;
+                & img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 900px) {
+        .article-content {
+            flex-direction: column;
+            align-items: center;
+            & .column-left {
+                width: 100%;
+                & .steps-grid {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    & .column {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        padding: 1rem 0;
+                        box-shadow: 0 1px 5px rgba(100, 100, 100, 0.281);
+                        &__heading {
+                            width: 100%;
+                            padding: 0.5rem 0;
+                            border-bottom: 1px solid #eee;
+                            & h4 {
+                                color: $background-color;
+                                margin: 0;
+                                margin-left: 1rem;
+                            }
+                        }
+                        & p {
+                            margin: 1rem 1rem;
+                            color: #666;
+                            max-width: 70%;
+                            font-weight: 700;
+                        }
+                        & img {
+                            object-fit: cover;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            & .column-right {
+                width: 100%;
+                & .hide_on_mobile {
+                    display: none;
+                }
+            }
         }
     }
 </style>
@@ -159,6 +218,10 @@
                         December 21, 2020</a>
                 </blockquote>
             </div>
+            <div class="ad-image hide_on_mobile">
+                <a href="https://www.freelashkit.com"><img
+                        src="https://ik.imagekit.io/usam13ogl7u/300X600-slick-banner-ad-variant_My50_AQ-u.png" /></a>
+            </div>
         </div>
     </div>
 </section>
@@ -176,6 +239,84 @@
                         <img src={img} alt="step one" />
                     </div>
                 {/each}
+            </div>
+        </div>
+    </div>
+</section>
+<section class="article-container">
+    <div class="article-content">
+        <div class="column-left">
+            <p>
+                I waited 5 minutes until it was all dry then looked in the
+                mirror.
+            </p>
+            <p>
+                I did it,
+                <strong>It was really one of the easiest thing’s I’ve ever done</strong>
+                and now instead of just my friend having beautiful lashes I have
+                them too.
+            </p>
+            <div class="img-box">
+                <img
+                    src="https://ik.imagekit.io/usam13ogl7u/3254534_v1Mq7P7ic.jpg" />
+            </div>
+            <p>
+                <strong>I went out, got lots of smiles … at first, I thought OMG
+                    did they fall off?</strong>
+                Am I sitting here with a caterpillar hanging from my eye?
+                <strong>But each time I checked they were on perfectly, the
+                    whole night.</strong>
+            </p>
+            <div class="img-box" style="float:left; margin-right:1rem;">
+                <img
+                    src="https://ik.imagekit.io/usam13ogl7u/Picture6_8WASbh-DU.jpg" />
+            </div>
+            <p>
+                The best part is
+                <strong>it didn’t cost me $150+</strong>
+                like my friend, I found
+                <strong>this company called Slick</strong>
+                that gives them away, you just need to pay the shipping cost as
+                a way to introduce you to their brand and magnetic lashes, they
+                have dozens of cool lash styles so I am going to go back and try
+                some of the more exotic ones but they had a lot of natural ones
+                too.
+            </p>
+            <p>
+                In the end, magnetic lashes proved to be exactly what I needed
+                to solve my lash envy, they were easy to put on, they arrived
+                fast and they fit my budget. A total success.
+            </p>
+            <p>
+                If you like my articles be sure to subscribe to my socials above
+                and
+                <strong>don’t forget to check out
+                    <a
+                        href="https://www.freelashkit.com">www.freelashkit.com</a>
+                    and get your free magnetic kit</strong>
+                while Slick.love is still generous enough to offer this
+                promotion.
+            </p>
+            <p>
+                One of the things that really sold me on Slick was this video of
+                someone blow drying the lash off their eye, since it never moved
+                or came off it sold me on the hold and that I wouldn’t look like
+                a fool with my lash hanging off. Since wearing them I can
+                confirm this was well, these really stay on, no matter what but
+                they clean up easily with jut water and a qtip.
+            </p>
+        </div>
+        <div class="column-right">
+            <div class="ad-image">
+                <a href="https://www.freelashkit.com"><img
+                        src="https://ik.imagekit.io/usam13ogl7u/slick-ad-twitter-grmlah-lash-800x800_0lwpcwH9K.png" /></a>
+            </div>
+
+            <div class="ad-image hide_on_mobile">
+                <a href="https://www.freelashkit.com">
+                    <img
+                        src="https://ik.imagekit.io/usam13ogl7u/300X600-slick-banner-ad_-Nm_u2y64.png" />
+                </a>
             </div>
         </div>
     </div>

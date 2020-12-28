@@ -9,7 +9,12 @@
     } from "svelte-awesome/icons";
     let author = "Kate Wingham";
     const fetchAnAvatar = async () => {
-        const res = await fetch("https://randomuser.me/api/?gender=female")
+        const res = await fetch("https://randomuser.me/api/?gender=female", {
+            headers: {
+                "Access-Control-Allow-Origin": "http://localhost:5000",
+                "Content-Type": "application/json",
+            },
+        })
             .then((response) => response.json())
             .catch((err) => err);
 
@@ -34,7 +39,7 @@
                 max-width: 75%;
                 & h1 {
                     margin-top: 0;
-                    color: #111;
+                    color: #342e37;
                     position: relative;
                     &::after {
                         width: 90%;
@@ -69,6 +74,30 @@
                         & svg {
                             margin: 0 0.5rem;
                         }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 900px) {
+        .header {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 5.5rem;
+            &__inner {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 1rem 0;
+                & .story-title {
+                    max-width: 95%;
+                    & h1 {
+                        margin-top: 0;
+                        color: #342e37;
+                        position: relative;
+                        font-size: 1.4rem;
                     }
                 }
             }
