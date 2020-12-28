@@ -34,6 +34,10 @@
         justify-content: space-between;
         & .column-left {
             width: 60%;
+            & p {
+                line-height: 1.5;
+                color: #666;
+            }
             & .image-hero-box {
                 max-width: 100%;
                 & img {

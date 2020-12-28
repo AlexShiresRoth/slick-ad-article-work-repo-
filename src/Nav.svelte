@@ -114,10 +114,8 @@
 
         .mobile_menu_hidden {
             transform: translateY(-100vh);
-            position: absolute;
-
+            position: fixed;
             z-index: 222;
-            position: absolute;
             height: 100vh;
             width: 100%;
             background: #fff;
@@ -130,7 +128,7 @@
         .mobile_menu {
             transform: translateY(0);
             z-index: 222;
-            position: absolute;
+            position: fixed;
             height: 100vh;
             width: 100%;
             background: #fff;
