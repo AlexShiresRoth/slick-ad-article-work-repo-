@@ -38,7 +38,9 @@
                     max-width: 8rem;
                 }
                 & h2 {
-                    color: #342e37;
+                    color: #666;
+                    font-weight: 100;
+                    font-size: 1.2rem;
                 }
             }
             &__nav-right {
@@ -52,7 +54,9 @@
             }
         }
     }
-    .mobile_nav {
+    .mobile_nav,
+    .mobile_menu,
+    .mobile_menu_hidden {
         display: none;
     }
     @media screen and (max-width: 900px) {
@@ -153,7 +157,8 @@
             <h2>Beauty Discoveries | Advertorial</h2>
         </div>
         <div class="nav__inner__nav-right">
-            <a href="">Get Started</a><a href="">Lashes</a>
+            <a href="https://www.freelashkit.com">Get Started</a><a
+                href="https://www.freelashkit.com">Lashes</a>
         </div>
     </div>
 </nav>
