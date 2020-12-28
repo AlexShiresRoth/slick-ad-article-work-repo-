@@ -101,6 +101,7 @@
                 background: #fbfbfb;
                 & img {
                     max-width: 100%;
+                    object-fit: contain;
                 }
             }
         }
@@ -138,7 +139,7 @@
                             font-weight: 700;
                         }
                         & img {
-                            object-fit: cover;
+                            object-fit: contain;
                             width: 100%;
                         }
                     }
@@ -148,6 +149,9 @@
                 width: 100%;
                 & .hide_on_mobile {
                     display: none;
+                }
+                & .a13d-image {
+                    padding: 0;
                 }
             }
         }

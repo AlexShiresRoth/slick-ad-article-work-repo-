@@ -85,7 +85,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 5.5rem;
+            margin-top: 6rem;
             &__inner {
                 display: flex;
                 flex-direction: column;

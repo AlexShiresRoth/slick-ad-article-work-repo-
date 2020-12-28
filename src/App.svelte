@@ -8,6 +8,9 @@
 <style type="text/scss">
 	:global(body) {
 		background: #fbfbfb;
+		box-sizing: border-box;
+		padding: 0;
+		margin: 0;
 	}
 	.main {
 		display: flex;
