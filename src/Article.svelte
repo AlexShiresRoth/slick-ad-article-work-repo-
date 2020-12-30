@@ -18,6 +18,15 @@
             img: "https://ik.imagekit.io/usam13ogl7u/step3_q8HSoGvJw.png",
         },
     ];
+
+    const fbClickEvent = function (e) {
+        console.log(e);
+        fbq("track", "ViewContent", {
+            content_name: "Ad Click",
+            content_category: "Freelashkit.com",
+            content_ids: ["2302391273400749"],
+        });
+    };
 </script>
 
 <style type="text/scss">
@@ -193,7 +202,10 @@
                 and put on at home for under $20?
             </p>
             <p>
-                <a href="https://freelashkit.com"><strong>Sign me up!</strong></a>
+                <a
+                    href="https://freelashkit.com"
+                    class="lashkit-link"
+                    on:click={fbClickEvent}><strong>Sign me up!</strong></a>
             </p>
             <p>So I did and a few days later they came.</p>
             <div class="img-box">
@@ -227,7 +239,10 @@
                 </blockquote>
             </div>
             <div class="a13d-image hide_on_mobile">
-                <a href="https://www.freelashkit.com"><img
+                <a
+                    href="https://www.freelashkit.com"
+                    class="lashkit-link"
+                    on:click={fbClickEvent}><img
                         src="https://ik.imagekit.io/usam13ogl7u/300X600-slick-banner-ad-variant_My50_AQ-u.png" /></a>
             </div>
         </div>
@@ -300,7 +315,9 @@
                 and
                 <strong>don’t forget to check out
                     <a
-                        href="https://www.freelashkit.com">www.freelashkit.com</a>
+                        href="https://www.freelashkit.com"
+                        class="lashkit-link"
+                        on:click={fbClickEvent}>www.freelashkit.com</a>
                     and get your free magnetic kit</strong>
                 while Slick.love is still generous enough to offer this
                 promotion.
@@ -316,12 +333,18 @@
         </div>
         <div class="column-right">
             <div class="a13d-image">
-                <a href="https://www.freelashkit.com"><img
+                <a
+                    href="https://www.freelashkit.com"
+                    class="lashkit-link"
+                    on:click={fbClickEvent}><img
                         src="https://ik.imagekit.io/usam13ogl7u/slick-ad-twitter-grmlah-lash-800x800_0lwpcwH9K.png" /></a>
             </div>
 
             <div class="a#13d-image hide_on_mobile">
-                <a href="https://www.freelashkit.com">
+                <a
+                    href="https://www.freelashkit.com"
+                    class="lashkit-link"
+                    on:click={fbClickEvent}>
                     <img
                         src="https://ik.imagekit.io/usam13ogl7u/300X600-slick-banner-ad_-Nm_u2y64.png" />
                 </a>

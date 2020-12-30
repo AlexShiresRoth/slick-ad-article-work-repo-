@@ -1,5 +1,6 @@
 {
   "name": "svelte-app",
+  "homepage": "https://freelashkit.com/beautytips/",
   "version": "1.0.0",
   "scripts": {
     "build": "rollup -c",
