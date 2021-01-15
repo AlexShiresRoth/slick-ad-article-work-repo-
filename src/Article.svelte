@@ -20,7 +20,6 @@
   ];
 
   const fbClickEvent = function (e) {
-    console.log(e);
     fbq("track", "ViewContent", {
       content_name: "Ad Click",
       content_category: "Freelashkit.com",
@@ -228,7 +227,7 @@
   </div>
 </section>
 
-<section type="text/scss">
+<style type="text/scss">
   $background-color-faded: #932f6d69;
   $background-color: #932f6d;
   .article-container {
@@ -364,4 +363,4 @@
       }
     }
   }
-</section>
+</style>
